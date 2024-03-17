@@ -169,3 +169,30 @@ main {
 .hidden {
   display: none;
 }
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  main {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .player {
+    padding: 4rem;
+  }
+
+  .dice {
+    top: 32rem;
+  }
+  .btn--hold{
+    margin-bottom: 60px;
+    opacity: 0.5;
+  }
+  .btn--new,
+  .btn--roll,
+  .btn--hold {
+    top: auto;
+    bottom: 0;
+    /* margin-bottom: -20px; */
+  }
+}
